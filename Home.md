@@ -1,0 +1,1 @@
+ForkBase is a system that supports high-level properties demanded in many modern applications, including data versioning, collaboration and security. With its versatile programming interface, rich semantics and high performance, ForkBase enables rapid developments of many classes of scalable, distributed applications.
