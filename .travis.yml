@@ -1,0 +1,15 @@
+script:
+- |-
+  git config user.name "Qian Lin"
+  git config user.email "linqian.qian.lin@gmail.com"
+  git remote remove origin
+  git remote add origin https://github.com/nusdbsystem/forkbase-wiki.git > /dev/null 2>&1
+  git remote add upstream https://github.com/ooibc88/forkbase.wiki.git > /dev/null 2>&1
+  git fetch origin
+  git fetch upstream
+  git merge upstream/master --no-edit
+  git push origin HEAD:master > /dev/null 2>&1
+  git push upstream HEAD:master > /dev/null 2>&1
+env:
+  matrix:
+    secure: hDKwTxUjk0L+duvly1lAD4zY++tk1QzjReVwjcfCRMbHhMc/7Z1AWYCwKjvk87unk++1hvYTU9LC6qfNOSdm4TeUr53AYia/NLa/cCCmDZgqsQvLCENX4rIUsCqjarxM4VAAk4kt8d1MSWPX5JwF5j4b95VTs0mQih2F3i/oTp5jR6dbTpzWJvQ9yXVcROXf4xM8yYgjTFsyqpkJQrQBc83zJW3wiXS0jG2F+nIIfBjIsxzO85dvzg30MiLkRstZTSy9BzJQ7nBbQqlPM4S56+HYRzH4lsKEE1YfEM6gWwqcZHOzrNNIZurhJjzGJPgYs6s0L1Frp2eL0EmADlaDLbpxgYnE7tYK9tS6zFvdXeYKX4Opjdsawc5oEjm6qnEU9GihXHa3chvzyc02k9ehr+u1c3cCNNre50LL3KdwYr2bhOi8uLOpLSMetAveVAfXVVicIV59IMfxHYEuR6WYuj3MnyC5TXvOgwfid1qKaQVDSQ6Pf0o89qLAmSb7bPp35X9WZna/uZWOAgGcbXnUFNgUvbcjWMOeuRbo75ZTyHzZ5UeHjUhftfAltm0AwJniEQjSfLvr2GZNVxvWWhgNg2k1x6xwcvBbxYSq0E2qQgwIrffoqihhcg/ifZbnCaqlng8KPJIO/ihyqhu5TB3LZvxGpXKMJGXH+yHEsjiAuNw=
